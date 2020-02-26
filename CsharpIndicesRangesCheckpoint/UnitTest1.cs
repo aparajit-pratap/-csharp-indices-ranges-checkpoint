@@ -1,4 +1,3 @@
-using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CsharpIndicesRangesCheckpoint
@@ -35,7 +34,6 @@ namespace CsharpIndicesRangesCheckpoint
 
         private string[] getGradeRange(int startIndex, int endIndex)
         {
-            var length = endIndex - startIndex + 1;
             var range = startIndex..(endIndex + 1);
             var result = GRADES[range];
             return result;
